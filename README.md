@@ -107,7 +107,7 @@ global-supply-chain-logistics-dashboard
 │
 ├── data
 │   ├── global_supply_chain_disruption_v1.csv
-│   └── countries_codes_and_coordinates.csv
+│   
 │
 ├── dashboard
 │   └── supply_chain_dashboard.pbix
