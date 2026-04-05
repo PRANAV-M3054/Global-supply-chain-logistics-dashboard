@@ -13,7 +13,7 @@ This project demonstrates **data cleaning, DAX analysis, and dashboard storytell
 ## 📊 Dashboard Pages
 
 ### Page 1 — Transportation Overview
-![Transportation Overview](images/page1.png)
+![Transportation Overview]("C:\Users\prana\OneDrive\Pictures\Screenshots 1\page1.png")
 > KPI metrics, shipping cost by transport mode, delay comparison, world map of origin cities and key observations panel
 
 ---
