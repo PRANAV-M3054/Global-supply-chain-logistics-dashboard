@@ -4,136 +4,146 @@ An interactive **Power BI analytics project** exploring global shipment data to 
 
 This project demonstrates **data cleaning, DAX analysis, and dashboard storytelling** using Power BI.
 
----
-
-## 📊 Dashboard Overview
-
-The dashboard provides a **comprehensive view of supply chain performance**, including transportation efficiency, disruption impact, and global shipment distribution.
-
-### Key Metrics Tracked
-
-- 📦 **Total Orders**
-- 💰 **Total Shipping Cost**
-- ⏱ **Average Delivery Delay**
-- ✅ **On-Time Delivery Rate**
+![PowerBI](https://img.shields.io/badge/Power%20BI-F2C811?style=flat&logo=powerbi&logoColor=black)
+![DAX](https://img.shields.io/badge/DAX-Analytics-blue)
+![GitHub](https://img.shields.io/badge/GitHub-Version%20Control-black)
 
 ---
 
-## 🧭 Key Analytical Sections
+## 📊 Dashboard Pages
 
-### 🚚 Transportation Performance
-
-Analyze how different transportation modes impact logistics operations.
-
-Insights include:
-
-- Shipping cost distribution across transport modes
-- Delay comparison between **air and sea transport**
-- Shipment volume by transportation method
+### Page 1 — Transportation Overview
+![Transportation Overview](images/page1.png)
+> KPI metrics, shipping cost by transport mode, delay comparison, world map of origin cities and key observations panel
 
 ---
 
-### ⚠ Supply Chain Disruption Analysis
-
-Understand how external disruptions affect delivery performance.
-
-The dashboard highlights delays caused by:
-
-- Geopolitical conflicts
-- Severe weather events
-- Port congestion
+### Page 2 — Disruption Analysis
+![Disruption Analysis](images/page2.png)
+> Geopolitical conflict delays, product category breakdown, monthly order trends and supply chain disruption impact
 
 ---
 
-### 📦 Product Category Insights
-
-Compare shipment volumes and delays across product categories such as:
-
-- Consumer Electronics
-- Pharmaceuticals
-- Auto Parts
-- Perishable Goods
-- Raw Materials
+### Page 3 — Risk & Logistics Network Analysis
+![Risk and Logistics](images/page3.png)
+> Scatter plots for shipping cost vs weight, geopolitical risk vs delay, and Sankey chart showing supply chain flow from logistics hubs
 
 ---
 
-### 📈 Trend Analysis
+## 🔢 Key Metrics
 
-The monthly shipment trend visual helps identify **seasonal fluctuations and operational patterns** in logistics activity.
-
----
-
-### 📉 Risk & Cost Relationships
-
-Advanced scatter plots analyze relationships between:
-
-- **Geopolitical risk vs delivery delay**
-- **Shipment weight vs shipping cost**
-
-These visuals help reveal underlying operational patterns.
-
----
-
-### 🌎 Global Logistics Network
-
-A global map highlights **shipment origins across major logistics hubs**, showing how global trade routes influence supply chain performance.
+| Metric | Value |
+|--------|-------|
+| Total Orders | 10,000 |
+| Total Shipping Cost | $114.38M |
+| Average Delivery Delay | 0.95 days |
+| On-Time Delivery Rate | 87.10% |
+| Largest delay cause | Geopolitical conflict (13 days) |
+| Highest shipping cost mode | Air ($82M) |
 
 ---
 
 ## 🔍 Key Insights
 
-- Sea freight handles the **majority of shipments globally**
-- Air transport drives **significantly higher logistics costs**
-- Geopolitical conflicts create the **largest delivery delays (~13 days)**
-- Shipment weight shows a **strong positive correlation with shipping cost**
+**Transportation:**
+- Air transport costs **$82M** vs Sea at **$33M** — air is 2.5x more expensive
+- Sea freight handles **8,300 orders** vs Air at **1,700** — sea dominates volume
+- Air transport achieves slightly faster delivery (0.92 days vs 0.95 days for sea)
+
+**Disruptions:**
+- Geopolitical conflicts create the largest delays — **13 days average**
+- Severe weather adds **6 days** of delay
+- Port congestion adds **3 days** of delay
+- No disruption = **0 delay days**
+
+**Products:**
+- Consumer Electronics and Semiconductors have the highest shipment volumes (~1,500 each)
+- Semiconductors have the highest average delay (1.03 days)
+- Consumer Electronics have the lowest delay (0.86 days)
+
+**Risk & Cost:**
+- Shipment weight shows **strong positive correlation** with shipping cost
+- Higher geopolitical risk index correlates with increased delivery delays
+- Santos, Tokyo and Shanghai are the busiest logistics hubs
+
+---
+
+## 🧭 Dashboard Pages Explained
+
+### Page 1 — Transportation Performance
+Analyse how different transportation modes impact logistics operations:
+- Shipping cost distribution across Air vs Sea
+- Delay comparison between transport modes
+- Shipment volume by transportation method
+- Global map of shipment origin cities
+
+### Page 2 — Disruption Analysis
+Understand how external disruptions affect delivery performance:
+- Average delay days by disruption event type
+- Product category volume and delay comparison
+- Monthly order trend across 12 months
+- Key insights panel with business conclusions
+
+### Page 3 — Risk & Logistics Network
+Advanced analytical visuals:
+- **Scatter plot** — Shipping Cost vs Order Weight (coloured by Air/Sea)
+- **Scatter plot** — Geopolitical Risk Index vs Average Delay Days
+- **Sankey chart** — Supply chain flow from 6 global logistics hubs to transport modes
 
 ---
 
 ## 🛠 Tools & Technologies
 
 | Tool | Purpose |
-|-----|------|
-| Power BI | Data visualization & dashboard creation |
+|------|---------|
+| Power BI Desktop | Dashboard creation and visualisation |
 | Power Query | Data cleaning and transformation |
-| DAX | Analytical calculations |
-| GitHub | Project documentation & version control |
+| DAX | Calculated measures and KPIs |
+| GitHub | Version control and documentation |
 
 ---
 
 ## 📁 Project Structure
 
 ```
-global-supply-chain-logistics-dashboard
+global-supply-chain-logistics-dashboard/
 │
-├── data
-│   ├── global_supply_chain_disruption_v1.csv
-│   
+├── Data/
+│   └── global_supply_chain_disruption_v1.csv
 │
-├── dashboard
+├── DashBoard/
 │   └── supply_chain_dashboard.pbix
 │
-├── images
-│   └── dashboard_preview.png
+├── images/
+│   ├── page1.png    ← Transportation overview
+│   ├── page2.png    ← Disruption analysis
+│   └── page3.png    ← Risk & logistics network
 │
 └── README.md
 ```
 
 ---
 
-## 🖼 Dashboard Preview
-
-<img width="871" height="663" alt="dashboard_preview" src="https://github.com/user-attachments/assets/b64ecd51-b10a-4949-a6d1-7ab629a2bcc7" />
-
-
----
-
 ## 🎯 Project Goals
 
 This project was created to:
-
-- Practice **end-to-end data analysis**
-- Build a **professional Power BI dashboard**
-- Demonstrate **data storytelling and business insights**
+- Practice **end-to-end data analysis** with a real-world supply chain dataset
+- Build a **3-page professional Power BI dashboard** with consistent design
+- Demonstrate **DAX calculations** for KPIs and analytical measures
+- Apply **data storytelling** — each page tells a focused business story
 - Showcase analytics work in a **portfolio-ready format**
+
+---
+
+## 📌 How to Run
+
+1. Clone this repository
+2. Open `DashBoard/supply_chain_dashboard.pbix` in Power BI Desktop
+3. If data doesn't load, update the data source path to point to `Data/global_supply_chain_disruption_v1.csv`
+4. Refresh the data and explore the dashboard
+
+---
+
+*Built with Power BI · April 2026*
 
 ⭐ If you found this project helpful, consider giving the repository a star!
